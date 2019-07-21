@@ -27,13 +27,13 @@ function filterTasks(e) {
     const li = document.querySelectorAll('.collection-item');
     console.log(li);
     li.forEach((task) => {
-        console.log(task.firstChild.textContent);
-        // const item = task.firstChild.textContent;
-        // if (item.toLowerCase().indexOf(textInput) != -1) {
-        //     task.style.display = 'block';
-        // } else {
-        //     task.style.display = 'none';
-        // }
+        
+        const item = task.firstChild.textContent;
+        if (item.toLowerCase().indexOf(textInput) != -1) {
+            task.style.display = 'block';
+        } else {
+            task.style.display = 'none';
+        }
 
     });
 }
